@@ -26,26 +26,50 @@ p{
     width: auto; /* El "auto" mantiene la proporción original */
     height: 250px; /* Establece la altura deseada */
     clip-path: circle(40%);
+    
 }
 
 .grid{
-display: grid;
-justify-content: center;
-align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    max-width: 80%;
+    margin-left: 10%;
+    
 
-margin: 4%;
-grid-template-columns: 1fr 1fr ;
-grid-template-rows: 1fr 1fr ;
+    grid-template-columns: .5fr .5fr ;
+    grid-template-rows: .1fr .1fr ;
 }
 
+ul{
+    align-items: center;
+    border-style: solid;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    margin: 1%;
+    aspect-ratio: 1/1;
+    margin-right: 30%;
+    
+}
+
+.table{
+    margin:2%;
+    margin-left: 10%;
+}
+
+.tabla-transparente {
+    background-color: rgba(255, 255, 255, 0.5); /* Cambia los valores de rgba según el nivel de transparencia deseado */
+    /* Añade otros estilos si es necesario */
+}
 
 .drop{
-    animation: dropIn 1s ease forwards;
+    animation: dropIn 2s ease forwards;
     animation-delay: calc(var(order) * 100ms);
 }
 @keyframes dropIn {
     from { transform: translateY(-500px);}
-    to {transform: translateY(500px);}
+    to {transform: translateY(0px);}
 }
 
 .color-changing-text {
