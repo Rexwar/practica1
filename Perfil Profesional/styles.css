@@ -3,19 +3,22 @@ body{
 }
 
 header {
-    display: frex;
+    display: flex;
+    align-items: center;
     margin-top: 1em;
     background-color: #3e3a3a;
     color: #fff;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+    border-radius: 3%;
     
 }
-
+h2{
+    margin-left: 1em;
+}
 p{
-    margin-top: 2em;
-    margin-left: 7em;
-    margin-right: 7em;
+    margin-left: 2em;
+    margin-right: 2em;
 
 }
 
@@ -25,18 +28,16 @@ p{
     clip-path: circle(40%);
 }
 
-.linkedln{
-    
-    position: absolute;
-    scale: 250%;
+.grid{
+display: grid;
+justify-content: center;
+align-items: center;
+
+margin: 4%;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr 1fr ;
 }
 
-.socials{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 2fr 1fr;
-    margin-top: 2em;
-}
 
 .drop{
     animation: dropIn 1s ease forwards;
@@ -57,4 +58,17 @@ p{
     50% { color: green; } /* Define otro color */
     75% { color: orange; } /* Define otro color */
     100% { color: red; } /* Vuelve al color inicial */
+}
+
+.linkedln{
+    
+    position: absolute;
+    scale: 250%;
+}
+
+.socials{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2em;
 }
