@@ -1,0 +1,60 @@
+body{
+    background-color:rgb(146, 251, 251);
+}
+
+header {
+    display: frex;
+    margin-top: 1em;
+    background-color: #3e3a3a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+p{
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+
+}
+
+.imagenPerfil{
+    width: auto; /* El "auto" mantiene la proporción original */
+    height: 250px; /* Establece la altura deseada */
+    clip-path: circle(40%);
+}
+
+.linkedln{
+    
+    position: absolute;
+    scale: 250%;
+}
+
+.socials{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2em;
+}
+
+.drop{
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(order) * 100ms);
+}
+@keyframes dropIn {
+    from { transform: translateY(-500px);}
+    to {transform: translateY(500px);}
+}
+
+.color-changing-text {
+    animation: colorChange 3s infinite; /* Aplica la animación */
+}
+
+@keyframes colorChange {
+    0% { color: red; } /* Define el color inicial */
+    25% { color: blue; } /* Define otro color */
+    50% { color: green; } /* Define otro color */
+    75% { color: orange; } /* Define otro color */
+    100% { color: red; } /* Vuelve al color inicial */
+}
